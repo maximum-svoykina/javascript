@@ -1,0 +1,13 @@
+<script>
+    var sum = prompt("Введите сумму");
+    var percent = prompt("Введите процент");
+    var monthes = prompt("Введите сколько месяцев");
+
+    var result = parseInt(sum);
+
+    for (var i = 0; i < monthes; i++) {
+        result += percent * result / (100 * 12);
+    }
+
+    alert("Вы получите " + result + " рублей");
+</script>

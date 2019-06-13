@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var product = prompt("Введите цифру того, что съели: 1 - картошка, 2 - мяско, 3 - салатик, 4 - греча");
+        var mass = prompt("Введите сколько грамм");
+
+        switch (parseInt(product)) {
+            case 1: 
+                alert("Вы съели " + 77 * mass / 100 + " ккал");
+                break;
+            case 2:
+                alert("Вы съели " + 200 * mass / 100);
+                break;
+            case 3:
+                alert("Вы съели " + 35 * mass / 100);
+                break;
+            case 4:
+                alert("Вы съели " + 110 * mass / 100);
+                break;
+            default: 
+                alert("Я не знаю такой цифры!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var food = prompt("Введите кол-во каллорий съеденных");
+        var weight = prompt("Введите вес");
+        var height = prompt("Введите рост");
+        var age = prompt("Введите ваш возраст");
+
+        var norm = 10*weight + 6.25*height - 5*age;
+        alert("Ваша норма: " + norm + " ккал");
+
+        if (norm > food) {
+            var diff = norm - food;
+            alert("Тебе еще можно покушать " + diff);
+        } else {
+            var diff = food - norm;
+            alert("Ты переел на " + diff);
+        }
+    </script>
+</body>
+</html>

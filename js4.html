@@ -1,0 +1,26 @@
+<script>
+    // Так создаются массивы
+    var arr = ["Яблоко", "Апельсин", "Груша"];
+
+    // Изменяем первый элемент на Слива
+    arr[0] = "Слива";
+
+    // alert(arr[0]);
+    // alert(arr[2]);
+    // alert(arr);
+    // alert(arr.length);
+
+    // arr.push("Клубника");
+    // alert(arr);
+    // arr.pop();
+    // alert(arr);
+
+    var usersByDay = [817, 1370, 712, 632, 2201, 201, 315];
+    var sum = 0;
+
+    for (var i=0; i < usersByDay.length; i++) {
+        sum = sum + usersByDay[i];
+    }
+
+    alert(sum/usersByDay.length);
+</script>
