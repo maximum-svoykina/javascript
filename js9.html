@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add() {
+            var name = prompt("Введите имя:");
+            var ul = document.getElementsByTagName("ul")[0];
+            var li = document.createElement("li");
+            li.innerText = name;
+            ul.appendChild(li);
+        }
+
+        function remove() {
+            var ul = document.getElementsByTagName("ul")[0];
+            ul.removeChild(ul.lastChild);
+        }
+    </script>
+
+   <h1>Список</h1>
+   <ul>
+       <li>Смурфик</li>
+   </ul>
+   <button onclick="add();">Добавить</button>
+   <button onclick="remove();">Убрать</button>
+</body>
+</html>
